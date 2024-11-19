@@ -3,7 +3,7 @@
 #add to the stage
 git add .
 
-while [[ "${answer,,}" != @(yes|y|1|positive) ]]
+while [[ "${answer}" != "yes" ]]
 do
 	echo -ne "\e[35myour commit please: \e[00m\e[32m"
 	read commit
